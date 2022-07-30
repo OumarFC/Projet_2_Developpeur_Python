@@ -8,7 +8,6 @@ def category_page(url):
     if reqs.ok:
         soup = BeautifulSoup(reqs.content, 'html.parser')
         divs = soup.find_all('div',class_='image_container')
-        category= soup.find('h1').text
         for h in divs:
             a = h.find('a')
             link = a['href']

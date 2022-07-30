@@ -15,7 +15,6 @@ def next_page(link):
             soup=BeautifulSoup(response.content, 'html.parser')
             page=soup.find('ul', class_='pager').find('li', {'class':'next'}).find('a')
             last_page = soup.find('ul', class_='pager').find('li', {'class': 'current'}).text.strip().split()[3]
-            first_page=page['href']
             for i in  range(2,int(last_page)+1):
                 base_link = link.split('index')[0]
                 NexPage.append(base_link + 'page-' + str(i) + '.html')

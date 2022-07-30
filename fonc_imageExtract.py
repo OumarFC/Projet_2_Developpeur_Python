@@ -1,7 +1,11 @@
+"""
+Fonction d'extraction des images de chaque categorie de pages
 
+"""
 from urllib.parse import urlparse
 from bs4 import BeautifulSoup
 import requests
+import urllib.request
 import urllib
 import re
 import os
@@ -17,6 +21,7 @@ def extract_image(table, repOut):
             image_url = siteUrl + img['src'].strip('../')
             a = urlparse(image_url)
             ImgName = os.path.basename(a.path)
-            urllib.urlretrieve(image_url, repOut + "\\" + ImgName)
+            urllib.request.urlretrieve(image_url, repOut + "\\" + ImgName)
 
+#recette
          

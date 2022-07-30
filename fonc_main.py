@@ -27,5 +27,5 @@ for i in tab:
         os.makedirs(racine + "Category" + "_" + str(tab.index(i)))
     base = [element for list in [fonc_category_page.category_page(j) for j in i] for element in list]
     fonc_InfosProduit.infos_produits(base, racine + "Category" + "_" + str(tab.index(i)) + "\\" + "infos_produits.csv")
-    fonc_imageExtract.extract_image(base, racine + "Category" + "_" + str(tab.index(i)))
+   # fonc_imageExtract.extract_image(base, racine + "Category" + "_" + str(tab.index(i)))
 
