@@ -10,7 +10,7 @@ from bs4 import BeautifulSoup
 
 def infos_produits(table, fileOut):
     siteUrl='https://books.toscrape.com/'
-    with open(fileOut, mode='w', encoding='utf-8') as csv_file:
+    with open(fileOut, mode='w', encoding='utf-8-sig') as csv_file:
         csv_file.write(
             "product_page_url | universal_product_code | titre | price_including_tax | price_excluding_tax | "
             "number_available | product_description | category | review_rating | image_url" + '\n')
@@ -28,19 +28,21 @@ def infos_produits(table, fileOut):
                 info = soup.find_all('td')
                 infop = [infop.text for infop in info]
                 catego = [h.text.strip('\n') for h in categ.findAll('li')]
-                pageurl = [h for h in categ.findAll('a')]
                 universal_product_code = infop[0]
-                price_including_tax = infop[2]
-                price_excluding_tax = infop[3]
+                price_including_tax = str(infop[2])
+                price_excluding_tax = str(infop[3])
                 number_available = infop[5].split('(')[1].split()[0]
                 category = catego[2]
-                product_desc= soup.find("div", class_="sub-header").find_next_sibling().text.replace(";",",")
-                if product_desc == str():
-                    product_desc=" Not Text Description for this Product"
-                product_description = product_desc
+                if soup.find("div", {"id": "product_description"}):
+                    product_desc = soup.find("div", class_="sub-header").find_next_sibling().text.replace(";", ",")
+                else:
+                    product_desc = " Not found Description for this Product"
+                print(product_desc)
+                product_description = str(product_desc)
                 csv_file.write(
-                    urls + '|' + universal_product_code + '|' + titre + '|' + price_including_tax.strip('Â') +
-                    '|' + price_excluding_tax.strip('Â') + '|' + number_available + '|' + product_description +
+                    urls + '|' + universal_product_code + '|' + titre + '|' + price_including_tax +
+                    '|' + price_excluding_tax + '|' + number_available +
+                    '|' + product_description +
                     '|' + category + '|' + review_rating + '|' + image_url + '\n')
 
 #Recette

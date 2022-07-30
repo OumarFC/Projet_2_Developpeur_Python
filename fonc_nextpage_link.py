@@ -13,7 +13,6 @@ def next_page(link):
     if response.ok:
         try:
             soup=BeautifulSoup(response.content, 'html.parser')
-            page=soup.find('ul', class_='pager').find('li', {'class':'next'}).find('a')
             last_page = soup.find('ul', class_='pager').find('li', {'class': 'current'}).text.strip().split()[3]
             for i in  range(2,int(last_page)+1):
                 base_link = link.split('index')[0]
