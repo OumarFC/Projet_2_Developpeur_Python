@@ -6,7 +6,7 @@ import re
 # recuperer l'url des pages categories
 # recuperer l'url de toutes les pages produits  de chaque categorie
 # recuperer les informations ci-dessous à partir de l'url des pages produits
-
+#
 #product_page_url
 #universal_ product_code (upc)
 #title
