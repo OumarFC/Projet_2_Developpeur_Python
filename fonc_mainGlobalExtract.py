@@ -20,16 +20,23 @@ print ("-------------Fin d'extraction de lien ----------------------------------
 
 print ("--------Extraction des pages et les pages suivantes pour chaque Categorie de proudit -------")
 tab = []
-for k in tab_category[1:]:
+for k in tab_category:
     base = fonc_nextpage_link.next_page(k)
     tab.append(base)
 print("---------------- Fin d'extractions des pages de chaque Categorie ----------------------------")
 
-print ("----------------Creation des fichiers csv et télechargement des photos de chaque categorie ---------------")
-for i in tab:
-    if not os.path.exists(racine + "Category" + "_" + str(tab.index(i)) ):
-        os.makedirs(racine + "Category" + "_" + str(tab.index(i)))
-    base = [element for list in [fonc_category_page.category_page(j) for j in i] for element in list]
-    fonc_InfosProduit.infos_produits(base, racine + "Category" + "_" + str(tab.index(i)) + "\\" + "infos_produits.csv")
-   # fonc_imageExtract.extract_image(base, racine + "Category" + "_" + str(tab.index(i)))
-print ("---------------------------Fin des traitement ! ---------------------------------------------------------")
+tabAll=[]
+print ("----------------Creation des fichiers csv et télechargement des photos de chaque categorie ---")
+for i in tab[0]:
+    if not os.path.exists(racine + "GlobalExtract" ):
+        os.makedirs(racine + "GlobalExtract" )
+    base=fonc_category_page.category_page(i)
+    tabAll.extend(base)
+
+print ("------------FIN Creation des fichiers csv------------------------------------------------------")
+
+print ("----------------Creation des fichiers csv et télechargement des photos  pour tout le site ------")
+
+fonc_InfosProduit.infos_produits(tabAll, racine + "GlobalExtract" + "\\" + "infos_AllproduitsExtract.csv")
+# fonc_imageExtract.extract_image(tabAll, racine + "Category" + "_" + str(tab.index(i)))
+print ("---------------------------Fin des traitement ! ------------------------------------------------")

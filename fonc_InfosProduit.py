@@ -24,6 +24,7 @@ def infos_produits(table, fileOut):
                 rating = soup.find('div', class_='col-sm-6 product_main').find('p', {'class': 'star-rating'})
                 review_rating = rating['class'][1]
                 image_url = siteUrl + img['src'].strip('../')
+                print(image_url)
                 titre = soup.find('h1').text
                 info = soup.find_all('td')
                 infop = [infop.text for infop in info]
