@@ -7,7 +7,7 @@
 1- Telecharger et installer la dernière version de Python.
 		 Pour ma part j'ai installé la version python 3.10.6
 		 
-2 - Depuis votre terminal   
+2 - Depuis votre terminal sous windows ( cmd )  
 
           verifier que vous avez pip installer sur la machine
           pour cela lancer la commande pip --help 
