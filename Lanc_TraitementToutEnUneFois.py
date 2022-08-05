@@ -19,7 +19,6 @@ racine = "C:\\Users\\Itec Global Services\\OneDrive\\dev_app_python\\Openclassro
 
 # 2- Definition des fonctions
 
-
 def category_page(url):
     links = []
     url=url.strip()
