@@ -119,7 +119,7 @@
 		envproj2
 		
 
-9 - Ajouter dans votre projet, les codes projet 2 que vous avez recuprer dans Github :
+9 - Ajouter dans votre projet, les codes du projet 2 que vous avez recuperer dans Github :
 		
 		fonc_category_link.py
 		fonc_category_page.py
@@ -133,14 +133,14 @@
 	
 10 -  Modification à faire 
 
-		  Dans les programmes de lancement ( lanc_*.py ), le parametre racine 
-		  racine est le repertoire où doit être stocké les données.
+		  Dans les programmes de lancement ( lanc_*.py ), modifier le parametre racine 
+		  racine est le chemin où doit être stocké les données.
 		  n'oubliez pas le double antislash après le dernier repertoire
               exemple : 
 		  racine = "C:\\Users\\Itec Global Services\\OneDrive\\dev_app_python\\OpenclassroomsProject\\projet_2\\data\\"
 		  
 11 - Lancement 
 	
-		 1- lanc_TraitementParCategorie.py : pour chaque categorie, un sous repertoire est créé contenant toute les informations de cette categorie
+		 1- lanc_TraitementParCategorie.py : pour chaque categorie, un sous repertoire est créé contenant toutes les informations de cette categorie
 		 2- lanc_TraitementTouteCategorie.py : pour toutes les catégories de tout le site, un sous repertoire contenant toutes les informations
-		 3- Lanc_TraitementToutEnUneFois.py : tout le traitement en un lancement, la fusion des points 1 et 2 
+		 3- Lanc_TraitementToutEnUneFois.py : tout le traitement en un seul lancement, la fusion des points 1 et 2 
