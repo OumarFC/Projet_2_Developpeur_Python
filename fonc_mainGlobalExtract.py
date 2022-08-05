@@ -23,6 +23,7 @@ tab = []
 for k in tab_category:
     base = fonc_nextpage_link.next_page(k)
     tab.append(base)
+print(tab)
 print("---------------- Fin d'extractions des pages de chaque Categorie ----------------------------")
 
 tabAll=[]
@@ -32,11 +33,11 @@ for i in tab[0]:
         os.makedirs(racine + "GlobalExtract" )
     base=fonc_category_page.category_page(i)
     tabAll.extend(base)
-
+print(tabAll)
 print ("------------FIN Creation des fichiers csv------------------------------------------------------")
 
 print ("----------------Creation des fichiers csv et télechargement des photos  pour tout le site ------")
 
 fonc_InfosProduit.infos_produits(tabAll, racine + "GlobalExtract" + "\\" + "infos_AllproduitsExtract.csv")
-# fonc_imageExtract.extract_image(tabAll, racine + "Category" + "_" + str(tab.index(i)))
-print ("---------------------------Fin des traitement ! ------------------------------------------------")
+#fonc_imageExtract.extract_image(tabAll, racine + "Category" + "_" + str(tab.index(i)))
+#print ("---------------------------Fin des traitement ! ------------------------------------------------")
