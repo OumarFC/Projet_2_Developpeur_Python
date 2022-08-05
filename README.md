@@ -1,6 +1,8 @@
-# Projet_2_Developpeur_Python
+# Projet 2 : Utilisez les bases de Python pour l'analyse de marché
 
-**Installation en ligne de commande**
+![logo.png](logo.png)
+
+**Installation en ligne de commande pour l'execution du projet**
   
 1- Telecharger et installer la dernière version de Python.
 		 Pour ma part j'ai installé la version python 3.10.6
@@ -34,7 +36,7 @@
 		  debug                       Show information useful for debugging.
 		  help                        Show help for commands.
 
-3- Créer votre dossier projet 
+3- Créer votre dossier projet sous windows
 	     
 		mkdir < monProjet2 > où monProjet2 est le nom de votre projet
 		cd < monProjet2 > 
@@ -88,7 +90,19 @@
 		 
 		 vous avez la liste ci-dessous affichées
 		 
-		  ( capture écran )
+            beautifulsoup4==4.11.1
+            bs4==0.0.1
+            certifi==2022.6.15
+            charset-normalizer==2.1.0
+            idna==3.3
+            numpy==1.23.1
+            pandas==1.4.3
+            python-dateutil==2.8.2
+            pytz==2022.1
+            requests==2.28.1
+            six==1.16.0
+            soupsieve==2.3.2.post1
+            urllib3==1.26.11
 	
 8 - Exclure l'environnement virtuel des commit sur le serveur distant 
 	
@@ -122,7 +136,7 @@
 		  Dans les programmes de lancement ( lanc_*.py ), le parametre racine 
 		  racine est le repertoire où doit être stocké les données.
 		  n'oubliez pas le double antislash après le dernier repertoire
-          exemple : 
+              exemple : 
 		  racine = "C:\\Users\\Itec Global Services\\OneDrive\\dev_app_python\\OpenclassroomsProject\\projet_2\\data\\"
 		  
 11 - Lancement 
