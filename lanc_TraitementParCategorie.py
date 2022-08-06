@@ -8,14 +8,14 @@ import fonc_InfosProduit
 import fonc_imageExtract
 
 siteUrl = 'https://books.toscrape.com/'
-racine = "C:\\Users\\Itec Global Services\\OneDrive\\dev_app_python\\OpenclassroomsProject\\projet_2\\data\\"
+racine = "C:\\Users\\Itec Global Services\\OneDrive\\dev_app_python\\OpenclassroomsProject\\projet_2\\data2\\"
 tab=[]
 
 print(" - DEBUT - ")
 
 print("- Extraction des liens de chaque Categorie de produit --")
 
-tab_category = fonc_category_link.category_link(siteUrl)
+tab_category = fonc_category_link.fonc_category_link(siteUrl)
 
 print ("- Extraction des pages et les pages suivantes pour chaque Categorie de prouduit --")
 

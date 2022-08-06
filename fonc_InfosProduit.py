@@ -24,7 +24,6 @@ def infos_produits(table, fileOut):
                 rating = soup.find('div', class_='col-sm-6 product_main').find('p', {'class': 'star-rating'})
                 review_rating = rating['class'][1]
                 image_url = siteUrl + img['src'].strip('../')
-                print(image_url)
                 titre = soup.find('h1').text
                 info = soup.find_all('td')
                 infop = [infop.text for infop in info]
@@ -38,7 +37,6 @@ def infos_produits(table, fileOut):
                     product_desc = soup.find("div", class_="sub-header").find_next_sibling().text.replace(";", ",")
                 else:
                     product_desc = " Not found Description for this Product"
-                print(product_desc)
                 product_description = str(product_desc)
                 csv_file.write(
                     urls + '|' + universal_product_code + '|' + titre + '|' + price_including_tax +

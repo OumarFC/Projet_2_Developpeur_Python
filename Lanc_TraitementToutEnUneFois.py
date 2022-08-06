@@ -15,7 +15,7 @@ import urllib.request
 tab = []
 tabAll=[]
 siteUrl = 'https://books.toscrape.com/'
-racine = "C:\\Users\\Itec Global Services\\OneDrive\\dev_app_python\\OpenclassroomsProject\\projet_2\\data\\"
+racine = "C:\\Users\\Itec Global Services\\OneDrive\\dev_app_python\\OpenclassroomsProject\\projet_2\\data2\\"
 
 # 2- Definition des fonctions
 
@@ -60,7 +60,7 @@ def next_page(link):
 
         except:
 
-            print("Next page is don't exist")
+            print("Next page is don't exist for this page")
 
         return nexpage
 
