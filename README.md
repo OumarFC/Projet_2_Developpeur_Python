@@ -53,36 +53,7 @@
 6 - Installer les package depuis le fichier requirements.txt
 	 
 		 sous windows avec la commande : pip install -r requirements.txt
-		 
-		 après execution vous avez un resumé comme ci-dessous
 
-            Collecting beautifulsoup4==4.11.1
-              Using cached beautifulsoup4-4.11.1-py3-none-any.whl (128 kB)
-            Collecting bs4==0.0.1
-              Using cached bs4-0.0.1.tar.gz (1.1 kB)
-              Preparing metadata (setup.py) ... done
-            Collecting certifi==2022.6.15
-              Using cached certifi-2022.6.15-py3-none-any.whl (160 kB)
-            Collecting charset-normalizer==2.1.0
-              Using cached charset_normalizer-2.1.0-py3-none-any.whl (39 kB)
-            Collecting idna==3.3
-              Using cached idna-3.3-py3-none-any.whl (61 kB)
-            Collecting numpy==1.23.1
-              Downloading numpy-1.23.1-cp310-cp310-win_amd64.whl (14.6 MB)
-                 ---------------------------------------- 14.6/14.6 MB 4.2 MB/s eta 0:00:00
-            Collecting pandas==1.4.3
-              Downloading pandas-1.4.3-cp310-cp310-win_amd64.whl (10.5 MB)
-                 ---------------------------------------- 10.5/10.5 MB 4.1 MB/s eta 0:00:00
-            Collecting python-dateutil==2.8.2
-              Using cached python_dateutil-2.8.2-py2.py3-none-any.whl (247 kB)
-            Collecting pytz==2022.1
-              Using cached pytz-2022.1-py2.py3-none-any.whl (503 kB)
-            Collecting requests==2.28.1
-              Using cached requests-2.28.1-py3-none-any.whl (62 kB)
-            Collecting six==1.16.0
-              Using cached six-1.16.0-py2.py3-none-any.whl (11 kB)
-            Collecting soupsieve==2.3.2.post1
-	    
 		 
 7 - Verifier l'installation des packages 
 	 

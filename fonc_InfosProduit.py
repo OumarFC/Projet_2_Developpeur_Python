@@ -36,7 +36,7 @@ def infos_produits(table, fileOut):
                 if soup.find("div", {"id": "product_description"}):
                     product_desc = soup.find("div", class_="sub-header").find_next_sibling().text.replace(";", ",")
                 else:
-                    product_desc = " Not found Description for this Product"
+                    product_desc = " None "
                 product_description = str(product_desc)
                 csv_file.write(
                     urls + '|' + universal_product_code + '|' + titre + '|' + price_including_tax +
