@@ -22,19 +22,7 @@
 		  download                    Download packages.
 		  uninstall                   Uninstall packages.
 		  freeze                      Output installed packages in requirements format.
-		  inspect                     Inspect the python environment.
-		  list                        List installed packages.
-		  show                        Show information about installed packages.
-		  check                       Verify installed packages have compatible dependencies.
-		  config                      Manage local and global configuration.
-		  search                      Search PyPI for packages.
-		  cache                       Inspect and manage pip's wheel cache.
-		  index                       Inspect information available from package indexes.
-		  wheel                       Build wheels from your requirements.
-		  hash                        Compute hashes of package archives.
-		  completion                  A helper command used for command completion.
-		  debug                       Show information useful for debugging.
-		  help                        Show help for commands.
+
 
 3- Créer votre dossier projet sous windows
 	     
@@ -75,7 +63,7 @@
             soupsieve==2.3.2.post1
             urllib3==1.26.11
 	
-8 - Exclure l'environnement virtuel des commit sur le serveur distant 
+8 - Exclure l'environnement virtuel des commits sur le serveur distant 
 	
 		sous windows, editer le fichier  .git\info\exclude 
 		ajouter a la ligne suivante le nom de l'envrionnement virtuel ici : monProjet2
@@ -104,7 +92,7 @@
 	
 10 -  Modification à faire 
 
-		  Dans les programmes de lancement ( lanc_*.py ), modifier le parametre racine 
+		  Dans les programmes de lancement ( lanc_*.py ), modifier le parametre racine. 
 		  racine est le chemin où doit être stocké les données.
 		  n'oubliez pas le double antislash après le dernier repertoire
               exemple : 
